@@ -1,0 +1,224 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='596' height='596' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='88' y1='88' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23064e77'/%3E%3Cstop offset='1' stop-color='%230a7dbe'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='75' y1='76' x2='168' y2='160'%3E%3Cstop offset='0' stop-color='%238f8f8f'/%3E%3Cstop offset='0.09' stop-color='%23b3b3b3'/%3E%3Cstop offset='0.18' stop-color='%23c9c9c9'/%3E%3Cstop offset='0.31' stop-color='%23dbdbdb'/%3E%3Cstop offset='0.44' stop-color='%23e8e8e8'/%3E%3Cstop offset='0.59' stop-color='%23f2f2f2'/%3E%3Cstop offset='0.75' stop-color='%23fafafa'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cfilter id='c' x='0' y='0' width='200%25' height='200%25'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='12' /%3E%3C/filter%3E%3C/defs%3E%3Cpolygon fill='url(%23a)' points='0 174 0 0 174 0'/%3E%3Cpath fill='%23000' fill-opacity='0.84' filter='url(%23c)' d='M121.8 174C59.2 153.1 0 174 0 174s63.5-73.8 87-94c24.4-20.9 87-80 87-80S107.9 104.4 121.8 174z'/%3E%3Cpath fill='url(%23b)' d='M142.7 142.7C59.2 142.7 0 174 0 174s42-66.3 74.9-99.3S174 0 174 0S142.7 62.6 142.7 142.7z'/%3E%3C/svg%3E");
+	background-attachment: absolute;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: fill;
+}
+header{
+	background-color: #17202A;
+	position: fixed;
+	width: 100%;
+	height: 65px;
+	box-shadow: 2px 2px 10px black;
+}
+.fa-bars{
+	margin:25px;
+	float: left;
+	transform: scale(2);
+}
+#check{
+	display: none;
+}
+h3 {
+	font-size: 25px;
+	color:#fff;
+	font-weight: 900;
+	margin-top: 20px;
+}
+h3 span{
+	color:#2980B9;
+}
+header i {
+	float:right;
+	margin-top:-53px;
+	margin-right: 25px;
+	transition: 1s;
+	color:white;
+	transition-property: color;
+}
+header i:hover{
+	color :#2980B9 ;
+	cursor: pointer;
+}
+
+nav{
+	position: absolute;
+	padding-top: 30px;
+	background-color: #17202C;
+	min-height:100%;
+	margin-top: 48px;
+	width: 300px;
+	box-shadow: -3px -3px 10px black;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+nav img{
+	width: 120px;
+	height: 120px;
+	border-radius: 100px;
+}
+nav h5{
+	color: #fff;
+	font-size: 18px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	transition: 1s;
+	transition-property: transform;
+}
+
+nav h5:hover{
+	transform: scale(1.5);
+	cursor: pointer;
+	color: #2980B9;
+}
+
+
+nav a {
+	text-decoration: none;
+	width: 75%;
+	display: block;
+	font-size: 21px;
+	line-height: 60px;
+	color: white;
+	padding-left: 25%;
+	transition: 1s;
+	transition-property: background;
+}
+nav a:hover{
+	background: #2980B9;
+}
+nav a i {
+	margin-right: 19px;
+	transform: scale(1.6);
+}
+#check:checked ~ nav{
+	left: -230px;
+}
+#check:checked ~ nav a span{
+	display: none;
+}
+#check:checked ~ nav a i{
+	padding-left:136px;
+}
+
+#check:checked ~ nav img{
+	padding-top: 20px;
+	width: 60px;
+	height: 60px;
+	padding-left:230px;
+}
+
+form{
+	position: absolute;
+	background-color: whitesmoke;
+	width: 80%;
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+	margin-top: 100px;
+	margin-left: 10%;
+	box-shadow: 2px 3px 20px #17202C;
+}
+form a{
+	display: block;
+	line-height: 45px;
+	font-size: 23px;
+	text-decoration: none;
+	cursor: pointer;
+	margin-top: 10px;
+	transition:1s;
+	transition-property: background;
+	width: 50%;
+}
+.title{
+	font-size: 40px;
+	font-weight: 900;
+	font-family: 'ROBOT';
+	margin: 0;
+	margin-bottom: 30px;
+	text-shadow: 10px 10px 10px #17202C;
+	padding: 0;
+}
+form a i {
+	margin-right: 10%;
+}
+.google{
+	color:#E74C3C;
+	border: 2px solid #E74C3C;
+}
+.google:hover{
+	background:#E74C3C;
+	color:white;
+	border: 2px solid white;
+}
+.facebook{
+	color:#2874A6;
+	border: 2px solid #2874A6;
+}
+.facebook:hover{
+	background:#2874A6;
+	color:white;
+	border: 2px solid white;
+}
+.win{
+	color:#F5B041;
+	border: 2px solid #F5B041;
+	margin-bottom: 20px;
+}
+.win:hover{
+	background:#F5B041;
+	color:white;
+	border: 2px solid white;
+}
+hr{
+	width: 60%;
+	height: 2px;
+	background: #17202A;
+	margin-bottom: 30px;
+}
+form input{
+	display: block;
+	margin:0;
+	margin-top: 15px;
+	height: 30px;
+	font-size: 16px;
+	width: 70%;
+	text-align: center;
+}
+
+form button{
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: 600;
+	background: #2874A6;
+	height: 29px;
+	width: 200px;
+	border:  2px solid #17202C;
+	transition:1s;
+	transition-property: background;
+}
+form button:hover{
+	background: #44566e;
+	color: white;
+	border:  2px solid #2874A6;
+}
+
+form p{
+	color:#44566e;
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.forget{
+	transition: 1s;
+	transition-property: transform;
+	cursor: pointer;
+}
+.forget:hover{
+	transform: scale(1.3);
+}

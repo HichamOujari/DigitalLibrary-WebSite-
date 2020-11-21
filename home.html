@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DigitalLibrary : Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body onresize="resize()" onload="resize()">
+	<input type="checkbox" id="check">
+	<header>
+		<label for="check"><i class="fa fa-bars"></i></label>
+		<center>
+			<h3>Digital<span>Library</span></h3>
+		</center>
+		<i class="fa fa-2x fa-sign-out"></i>
+	</header>
+<br>
+	<nav>
+		<center>
+			<img src="avatar.png">
+			<h5>Hicham Oujari</h5>
+		</center>
+		<a href="#"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+		<a href="#"><i class="fa fa-shopping-basket"></i> <span>Mes achats</span></a>
+		<a href="#"><i class="fa fa-openid"></i> <span>Mes emprunts</span></a>
+		<a href="#"><i class="fa fa-cogs"></i> <span>Settings</span></a>
+		<a href="#"><i class="fa fa-info-circle"></i> <span>Guide</span></a>
+	</nav>
+
+	<content>
+		
+	</content>
+</body>
+<script>
+	function resize(){
+		if(window.innerWidth<=850){
+			var check=document.getElementById('check'); 
+			if(!check.checked){
+				document.getElementById('check').click();
+			}
+		}
+	}
+</script>
+</html>
